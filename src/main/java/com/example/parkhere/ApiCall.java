@@ -23,11 +23,11 @@ public class ApiCall {
 
 
     @SuppressWarnings("unchecked")
-    public ApiCall(Location location, ApiKey apiKey) throws IOException {
+    public ApiCall(Location location) throws IOException {
 
         String apiCallJSONOutput = "";
 
-        URL url = new URL("https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/within?radius=200&lat=" + location.latitude + "&lng=" + location.longitude + "&outputFormat=json&apiKey=" + apiKey.currentKey);
+        URL url = new URL("https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/within?radius=200&lat=" + location.latitude + "&lng=" + location.longitude + "&outputFormat=json&apiKey=" + ApiKey.getCurrentKey());
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
         conn.setRequestMethod("GET");
