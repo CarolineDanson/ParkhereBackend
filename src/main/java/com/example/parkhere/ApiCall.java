@@ -3,11 +3,9 @@ package com.example.parkhere;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -25,11 +23,11 @@ public class ApiCall {
 
 
     @SuppressWarnings("unchecked")
-    public ApiCall(Location location) throws IOException {
+    public ApiCall(Location location, ApiKey apiKey) throws IOException {
 
         String apiCallJSONOutput = "";
 
-        URL url = new URL("https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/within?radius=200&lat=" + location.latitude + "&lng=" + location.longitude + "&outputFormat=json&apiKey=f0e4a112-41f0-4461-a8e2-754f54f5534d");
+        URL url = new URL("https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/within?radius=200&lat=" + location.latitude + "&lng=" + location.longitude + "&outputFormat=json&apiKey=" + apiKey.currentKey);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
         conn.setRequestMethod("GET");
