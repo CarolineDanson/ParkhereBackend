@@ -1,0 +1,20 @@
+Streetname - ptillåten
+https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/street/styrmansgatan?&outputFormat=json&apiKey=f0e4a112-41f0-4461-a8e2-754f54f5534d
+https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/street/Odengatan?&outputFormat=json&apiKey=f0e4a112-41f0-4461-a8e2-754f54f5534d
+
+Within - ptillåten
+Borgarfjordsgatan
+https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/within?radius=50&lat=59.407069&lng=17.946567&outputFormat=json&apiKey=f0e4a112-41f0-4461-a8e2-754f54f5534d
+
+Isafjordsgatan
+https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/within?radius=50&lat=59.406059&lng=17.945757&outputFormat=json&apiKey=f0e4a112-41f0-4461-a8e2-754f54f5534d
+
+Valhallavägen
+https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/untilNextWeekday?&within?radius=50&lat=59.344179&lng=18.077000&outputFormat=json&apiKey=f0e4a112-41f0-4461-a8e2-754f54f5534d
+
+Until Next Weekday - ptillåten
+https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/untilNextWeekday?maxFeatures={MAXFEATURES}&outputFormat={FORMAT}&callback={CALLBACK}&apiKey={APIKEY}
+
+Antaganden:
+Fordonet är en personbil
+Hänsyn tas inte till boendeparkering
